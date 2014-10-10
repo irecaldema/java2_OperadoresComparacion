@@ -32,16 +32,20 @@ Ejemplos de operadores:
  true!=true da un valor FALSO
  true && true da un valor VERDADERO
 */
-  Scanner sc = new Scanner();
+  Scanner sc = new Scanner(System.in);
   
   System.out.print("\ncomparador para todas las edades: ");
   System.out.print("\nintroduzca su edad: ");
-  edad = sc.nextint();
+  edad = sc.nextInt();
   while ((edad <= 0) || (edad >= 200))
   {
-       System.out.print("\nla edad introducisda no cumple los requisitos edad: ");
+       System.out.print("\nla edad introducisda no cumple los requisitos edad");
+       System.out.print("\n");
+       System.out.print("\n");
        System.out.print("\nintroduzca su edad: ");
-       edad = sc.nextint();
+       edad = sc.nextInt();
   }
+  System.out.print("\nSu edad es "+edad+" anos");
+  System.out.print("\n");
  }
 }
