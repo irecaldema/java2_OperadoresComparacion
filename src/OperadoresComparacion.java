@@ -10,16 +10,16 @@ El uso mas comun para los operadores de comparacion es en las estructuras IF, si
 Normalmente una expresion usando operadores es imilar a esto:  A "operador" B. 
  
 Operadores numericos: 
-"<" Menor que.
-">" Mayor que. 
-"<=" Menor o igual que.
-">=" Mayor o igual que.
+1 "<" Menor que.
+2 ">" Mayor que. 
+3 "<=" Menor o igual que.
+4 ">=" Mayor o igual que.
 Operadores logicos: (Se utilizan con valores true y false)
-"&&" AND : regresa un valor verdadero siempre y cuando los dos terminos (A y B) sean verdaderos.
-"||" OR : regresaun valor verdadro siempre y cuando alguno de los dos terminos sea verdadero.
+5 "&&" AND : regresa un valor verdadero siempre y cuando los dos terminos (A y B) sean verdaderos.
+6 "||" OR : regresaun valor verdadro siempre y cuando alguno de los dos terminos sea verdadero.
 Operadores universales, pueden usarse con numeros o valores logicos.
-"==" Igual a. Notese que se usan dos iguales. 
-"!=" No es igual a.
+7 "==" Igual a. Notese que se usan dos iguales. 
+8 "!=" No es igual a.
 */	    
 	    
 /*
@@ -37,7 +37,7 @@ Ejemplos de operadores:
   System.out.print("\ncomparador para todas las edades: ");
   System.out.print("\nintroduzca su edad: ");
   edad = sc.nextInt();
-  while ((edad <= 0) || (edad >= 200))
+  while /*3, 4, 6 */((edad <= 0) || (edad >= 200))
   {
        System.out.print("\nla edad introducisda no cumple los requisitos edad");
        System.out.print("\n");
@@ -47,29 +47,34 @@ Ejemplos de operadores:
   }
   System.out.print("\nSu edad es "+edad+" anos");
   System.out.print("\n");
-  if (edad<100)
+  if /*1*/(edad<100)
    {
     System.out.print("\nSu edad menor a 100");
     System.out.print("\n");
    }
-   if (edad>100)
+   if /*2*/(edad>100)
    {
     System.out.print("\nSu edad mayor a 100");
     System.out.print("\n");
    }
-   if (edad>=100)
+   if /*3*/(edad>=100)
    {
     System.out.print("\nSu edad mayor o igual a 100");
     System.out.print("\n");
    }
-   if (edad<=100)
+   if /*4*/(edad<=100)
    {
     System.out.print("\nSu edad menor o igual a 100");
     System.out.print("\n");
    }
-   if (edad<=100)
+   if /*5, 8*/((edad!=30)&&(edad!=50))
    {
-    System.out.print("\nSu edad menor o igual a 100");
+    System.out.print("\nSu edad no es 30 y tampoco es 50");
+    System.out.print("\n");
+   }
+    if /*6, 9*/((edad==30)||(edad==50))
+   {
+    System.out.print("\nSu edad es 30 o 50");
     System.out.print("\n");
    }
    
