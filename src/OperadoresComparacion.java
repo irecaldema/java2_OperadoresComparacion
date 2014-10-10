@@ -47,5 +47,33 @@ Ejemplos de operadores:
   }
   System.out.print("\nSu edad es "+edad+" anos");
   System.out.print("\n");
+  if (edad<100)
+   {
+    System.out.print("\nSu edad menor a 100");
+    System.out.print("\n");
+   }
+   if (edad>100)
+   {
+    System.out.print("\nSu edad mayor a 100");
+    System.out.print("\n");
+   }
+   if (edad>=100)
+   {
+    System.out.print("\nSu edad mayor o igual a 100");
+    System.out.print("\n");
+   }
+   if (edad<=100)
+   {
+    System.out.print("\nSu edad menor o igual a 100");
+    System.out.print("\n");
+   }
+   if (edad<=100)
+   {
+    System.out.print("\nSu edad menor o igual a 100");
+    System.out.print("\n");
+   }
+   
+   //fin de main
  }
+ //fin de clase
 }
