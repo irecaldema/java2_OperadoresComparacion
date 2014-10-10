@@ -72,7 +72,7 @@ Ejemplos de operadores:
     System.out.print("\nSu edad no es 30 y tampoco es 50");
     System.out.print("\n");
    }
-    if /*6, 9*/((edad==30)||(edad==50))
+    if /*6, 7*/((edad==30)||(edad==50))
    {
     System.out.print("\nSu edad es 30 o 50");
     System.out.print("\n");
