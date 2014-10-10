@@ -45,26 +45,26 @@ Ejemplos de operadores:
        System.out.print("\nintroduzca su edad: ");
        edad = sc.nextInt();
   }
-  System.out.print("\nSu edad es "+edad+" anos");
+  System.out.print("\nSu edad es de "+edad+" anos");
   System.out.print("\n");
   if /*1*/(edad<100)
    {
-    System.out.print("\nSu edad menor a 100");
+    System.out.print("\nSu edad es menor a 100");
     System.out.print("\n");
    }
    if /*2*/(edad>100)
    {
-    System.out.print("\nSu edad mayor a 100");
+    System.out.print("\nSu edad es mayor a 100");
     System.out.print("\n");
    }
-   if /*3*/(edad>=100)
+   if /*3*/(edad>=120)
    {
-    System.out.print("\nSu edad mayor o igual a 100");
+    System.out.print("\nSu edad es mayor o igual a 120");
     System.out.print("\n");
    }
-   if /*4*/(edad<=100)
+   if /*4*/(edad<=80)
    {
-    System.out.print("\nSu edad menor o igual a 100");
+    System.out.print("\nSu edad es menor o igual a 80");
     System.out.print("\n");
    }
    if /*5, 8*/((edad!=30)&&(edad!=50))
